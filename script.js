@@ -208,3 +208,31 @@ yearsUntilRetirement('Mary', 1948);
 
 */
 
+///////////////////////////////////////////////////////////////
+// Lecture: Statements and Expressions
+/*
+//statement
+function someFun(par) {
+    //code in here
+}
+
+//expression
+var someFun = function(par) {
+    //code
+}
+
+//expressions
+3+4;
+var x = 1;
+
+//statement
+if(x === 5) {
+    //do something
+}
+
+An expression produces a value and a statement is just meant to do an an action
+
+*/
+
+/////////////////////////////////////////////////////////////////
+// Lecture: Arrays
