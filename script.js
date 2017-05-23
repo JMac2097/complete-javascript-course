@@ -236,7 +236,7 @@ An expression produces a value and a statement is just meant to do an an action
 
 /////////////////////////////////////////////////////////////////
 // Lecture: Arrays
-
+/*
 var names = ['John', 'Jane', 'Mark'];
 var years = new Array(1990, 1969, 1948);
 
@@ -260,7 +260,97 @@ console.log(indexed);
 if(john.indexOf('designer') === -1) {
     console.log('John is not a designer, but he is trying his hardest')
 };
-
+*/
 ////////////////////////////////////////////////////////
 //Lecture: Objects
 
+//key/value pairs
+/*
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false
+}
+
+console.log(john.lastName);
+console.log(john['lastName']);
+
+var xyz = 'job';
+console.log(john[xyz]);
+
+john.lastName = 'Miller';
+john['job']= 'programmer';
+
+console.log(john);
+
+var jane = new Object();
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane['isMarried'] = true;
+
+console.log(jane);
+
+*/
+
+/////////////////////////////////////////////////////////////////
+//Lecture: Objects and Methods
+/*
+//v1.0
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        return 2017 - this.yearOfBirth;
+    }
+}
+*/
+//console.log(john.calculateAge(1987));
+/*console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);*/
+
+
+//v2.0
+/*
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function() {
+        this.age = 2017 - this.yearOfBirth;
+    }
+};
+
+john.calculateAge();
+console.log(john);
+*/
+
+/*
+var nirvana = {
+    vocals: 'Kurt',
+    bass: 'Krist',
+    drums: 'Dave',
+    otherMemembers: ['Pat', 'Jason', 'Chad'],
+    numberOfExMembers: function(otherMemembers) {
+        this.numberOfExMembers = this.otherMemembers.length;
+    }
+}
+
+nirvana.numberOfExMembers();
+console.log(nirvana);
+
+*/
