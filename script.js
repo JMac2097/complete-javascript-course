@@ -176,3 +176,35 @@ if(johnTotal > derekTotal && johnTotal > janeTotal) {
 }
 
 */
+
+//////////////////////////////////////////////////////////////
+
+//Lecture: functions 
+/*
+function calculateAge(yearOfBirth) {
+    var age = 2017 - yearOfBirth;
+    return age;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1969);
+var ageMary = calculateAge(1948);
+//console.log(ageMary);
+
+function yearsUntilRetirement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+    if(retirement >= 0) {
+    console.log(name + ' retires in ' + retirement + ' years');
+    } else {
+        console.log(name + " has already retired");
+    }
+
+}
+
+yearsUntilRetirement('John', 1990);
+yearsUntilRetirement('Mike', 1969);
+yearsUntilRetirement('Mary', 1948);
+
+*/
+
