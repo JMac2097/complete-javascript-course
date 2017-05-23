@@ -236,3 +236,31 @@ An expression produces a value and a statement is just meant to do an an action
 
 /////////////////////////////////////////////////////////////////
 // Lecture: Arrays
+
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[0]);
+names[1] = 'Ben';
+console.log(names);
+
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');
+john.unshift('Mr.');
+john.pop(); //remove from the end and returns that value
+john.shift(); //removes from the beginning and returns the value
+
+
+console.log(john);
+
+var indexed = john.indexOf('Smith');
+console.log(indexed);
+
+if(john.indexOf('designer') === -1) {
+    console.log('John is not a designer, but he is trying his hardest')
+};
+
+////////////////////////////////////////////////////////
+//Lecture: Objects
+
