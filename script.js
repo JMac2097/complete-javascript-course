@@ -353,4 +353,23 @@ var nirvana = {
 nirvana.numberOfExMembers();
 console.log(nirvana);
 
+
+var theWho = {
+    ukSales: 34000,
+    usSales: 45000,
+    vocals: 'Roger',
+    guitar: 'Pete',
+    drums: 'Keith',
+    bass: 'John',
+    collectedArray: ['Derek', 'Derek2','Bill'],
+    totalSales: function() {
+        this.totalSales = this.ukSales + this.usSales;
+    }
+};
+
+theWho.totalSales();
+console.log(theWho);
+theWho.collectedArray.push('Dave');
+console.log(theWho.collectedArray.length);
+
 */
