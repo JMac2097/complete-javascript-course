@@ -373,3 +373,65 @@ theWho.collectedArray.push('Dave');
 console.log(theWho.collectedArray.length);
 
 */
+
+//////////////////////////////////////////////////////////////
+//  Lecture: Loops and Iterations
+/*
+for(var i=0; i <= 10; i++) {
+    console.log(i);
+}
+*/
+
+var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+//for loops
+/*
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+for(i = names.length -1; i >= 0; i--) {
+    console.log(names[i]);
+}
+*/
+
+//while loops
+/*
+var i = 0;
+while (i < names.length) {
+    console.log(names[i]);
+    i++;
+}
+
+for(var i = 1; i <= 5; i++ ) {
+    if(i === 3) {
+        continue;
+    }
+
+    console.log(i);
+
+}
+*/
+
+///////////////////////////////////////////////////////////
+//Lecture: Coding challenge 2
+
+/*
+1- Create an array with some years where perons were born.
+2- Create an empty array (just [])
+3- Use a loop to fill the array with the ages of the persons
+4- Use another loop to log into the console whether each person is of full age 
+(18 or older) as well as their age.
+5- Finally creat a function called printFullAge which recieves the vector of years 
+as an argument, executes the steps 2, 3 and 4 and returns a vector of true/false 
+boolean values: true if the person is of full age(>=18) false if not (<18)
+6- Call the function with two different vectors and store the results in two variables: full_1 and full_2.
+
+Example input: [1965, 1980, 1976]
+Example output: [true, false, true]
+
+Hint: You can use a loop not only to read from an array, like y[i], but to also set values in an array, like y[i] = ... You can also use the specific array methods.
+
+*/
+
+
