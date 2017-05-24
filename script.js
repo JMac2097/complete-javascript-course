@@ -487,11 +487,27 @@ var biscuitList2 = biscuitBoolean([45, 12, 11, 34, 22, 1, 55, 61, 21]);
 
 */
 
+/*
+var wheelsTotal = [];
 
+function numberOfWheels(wheelNumber) {
 
+    for (var i = 0; i < wheelNumber.length; i++) {
+        if(wheelNumber[i] < 4) {
+            console.log('Less than ' + wheelNumber[i] + ' wheels? I hope that is a motorbike good sir');
+            wheelsTotal.push(false);
+        } else {
+            console.log('Nice set of ' + wheelNumber[i] + ' wheels that you have there buddy!');
+            wheelsTotal.push(true);
+        }
+    }
+}
 
+var number1 = numberOfWheels([2,34,22,11]);
+var number2 = numberOfWheels([3,2,1,5,6]);
+    console.log(wheelsTotal);
 
-
+*/
 
 
 
