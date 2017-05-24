@@ -422,7 +422,7 @@ for(var i = 1; i <= 5; i++ ) {
 3- Use a loop to fill the array with the ages of the persons
 4- Use another loop to log into the console whether each person is of full age 
 (18 or older) as well as their age.
-5- Finally creat a function called printFullAge which recieves the vector of years 
+5- Finally create a function called printFullAge which recieves the vector of years 
 as an argument, executes the steps 2, 3 and 4 and returns a vector of true/false 
 boolean values: true if the person is of full age(>=18) false if not (<18)
 6- Call the function with two different vectors and store the results in two variables: full_1 and full_2.
@@ -433,5 +433,33 @@ Example output: [true, false, true]
 Hint: You can use a loop not only to read from an array, like y[i], but to also set values in an array, like y[i] = ... You can also use the specific array methods.
 
 */
+
+
+function printFullAge(years) {
+    var ages = [];
+    var fullAges = [];
+    for( var i = 0; i < years.length; i++) {
+        ages[i] = 2017 - years[i];
+    }
+
+    //console.log(ages);
+
+    for(i = 0; i < ages.length; i++) {
+        if (ages[i] >= 18) {
+            console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' and full age');
+            fullAges.push(true);
+        } else {
+            console.log('Person ' + (i + 1) + ' is only ' + ages[i] + ' and too young, begone');
+            fullAges.push(false);
+        }
+    }
+return fullAges;
+}
+
+var years = [1945, 2013, 1909, 2000, 2002];
+var full_1 = printFullAge(years);
+var full_2 = printFullAge([2015, 1970, 1500]);
+
+
 
 
