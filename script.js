@@ -435,30 +435,62 @@ Hint: You can use a loop not only to read from an array, like y[i], but to also 
 */
 
 
-function printFullAge(years) {
-    var ages = [];
-    var fullAges = [];
-    for( var i = 0; i < years.length; i++) {
-        ages[i] = 2017 - years[i];
-    }
 
-    //console.log(ages);
+// function printFullAge(years) {
+//     var ages = [];
+//     var fullAges = [];  //for the boolean values
+//     for( var i = 0; i < years.length; i++) {
+//         ages[i] = 2017 - years[i];
+//     }
 
-    for(i = 0; i < ages.length; i++) {
-        if (ages[i] >= 18) {
-            console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' and full age');
-            fullAges.push(true);
-        } else {
-            console.log('Person ' + (i + 1) + ' is only ' + ages[i] + ' and too young, begone');
-            fullAges.push(false);
-        }
+//     for(i = 0; i < ages.length; i++) {
+//         if (ages[i] >= 18) {
+//             console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' and full age');
+//             fullAges.push(true);
+//         } else {
+//             console.log('Person ' + (i + 1) + ' is only ' + ages[i] + ' and too young, begone');
+//             fullAges.push(false);
+//         }
+//     }
+// return fullAges;
+// }
+
+// var years = [1945, 2013, 1909, 2000, 2002];
+// var full_1 = printFullAge(years);
+// var full_2 = printFullAge([2015, 1970, 1500]);
+
+
+/*
+function biscuitBoolean(biscuits) {
+var biscuitsLeft = [];
+var lotsOfBiscuits = [];
+
+for(var i = 0; i < biscuits.length; i++) {
+    biscuitsLeft[i] = biscuits[i];
+    if(biscuitsLeft[i] < 20) {
+        console.log('Arggh, biscuits only at ' + biscuitsLeft[i] + ' biscuits left');
+        lotsOfBiscuits.push(false);
+    } else {
+        console.log('It\'s ok, you have ' + biscuitsLeft[i] + ' biscuits left');
+        lotsOfBiscuits.push(true);
     }
-return fullAges;
 }
 
-var years = [1945, 2013, 1909, 2000, 2002];
-var full_1 = printFullAge(years);
-var full_2 = printFullAge([2015, 1970, 1500]);
+return lotsOfBiscuits;
+
+
+}
+
+var biscuits = [34, 8, 15, 22, 45];
+var biscuitList2 = biscuitBoolean([45, 12, 11, 34, 22, 1, 55, 61, 21]);
+
+
+*/
+
+
+
+
+
 
 
 
